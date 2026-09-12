@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17233d;
+    background-color: #ffffff;
+}
+
+.navbar-custom {
+    background-color: #5238ce;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.brand-icon {
+    color: #53df9c;
+    font-size: 20px;
+}
+
+.brand-light {
+    font-weight: 400;
+}
+
+.navbar-custom .nav-link {
+    color: white !important;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.trial-btn {
+    background-color: #51d77e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 9px 18px;
+    font-size: 11px;
+    margin-left: 25px;
+}
+
+.trial-btn:hover {
+    background-color: #3fc56d;
+    color: white;
+}
+
+.hero-section {
+    position: relative;
+    min-height: 320px;
+    background-color: #5238ce;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    top: -230px;
+    left: -70px;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    bottom: -280px;
+    right: 40px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.hero-content p {
+    font-size: 13px;
+    color: #e8e4ff;
+    margin-bottom: 17px;
+}
+
+.search-box {
+    max-width: 365px;
+}
+
+.search-box .form-control {
+    height: 38px;
+    border: none;
+    font-size: 10px;
+    padding-left: 14px;
+}
+
+.search-box .form-control:focus {
+    box-shadow: none;
+}
+
+.search-btn {
+    width: 42px;
+    background-color: #50cc78;
+    border: none;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #3fba68;
+    color: white;
+}
+
+.section-padding {
+    padding: 36px 0;
+}
+
+.categories-section {
+    padding: 5px 0 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+
+.article-card {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    min-height: 120px;
+    padding: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+.article-icon {
+    color: #56647b;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.article-card h5 {
+    color: #202c43;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 9px;
+}
+
+.article-card p {
+    color: #69758a;
+    font-size: 8px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.article-card p i {
+    margin-right: 3px;
+}
+
+.category-card {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.13);
+}
+
+.category-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #eeeaff;
+    color: #5238ce;
+    font-size: 21px;
+}
+
+.category-card h5 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.category-card p {
+    font-size: 10px;
+    color: #737d8e;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .navbar-custom .nav-link {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .trial-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        min-height: 290px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 11px;
+    }
+
+    .search-box {
+        max-width: 85%;
+    }
+
+    .section-padding {
+        padding: 30px 15px;
+    }
+}
